@@ -5,17 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>【方案1】迪拜商务与休闲之旅：最终完整攻略</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 20px; background-color: #f8f8f8; }
-        .container { max-width: 1400px; margin: auto; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); }
-        h1 { color: #007bff; border-bottom: 3px solid #007bff; padding-bottom: 10px; margin-top: 0; }
-        h2 { color: #28a745; border-bottom: 2px solid #28a745; padding-bottom: 8px; margin-top: 25px; }
-        h3 { color: #dc3545; margin-top: 20px; }
-        table { width: 100%; border-collapse: collapse; margin-top: 15px; table-layout: fixed; }
-        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; vertical-align: top; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            margin: 0; 
+            padding: 10px; 
+            background-color: #f8f8f8; 
+            font-size: 16px; 
+        }
+        .container { 
+            width: 100%; 
+            padding: 15px; 
+            background: #fff; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
+        h1 { color: #007bff; border-bottom: 3px solid #007bff; padding-bottom: 8px; margin-top: 5px; font-size: 1.6em; }
+        h2 { color: #28a745; border-bottom: 2px solid #28a745; padding-bottom: 6px; margin-top: 20px; font-size: 1.3em; }
+        h3 { color: #dc3545; margin-top: 15px; font-size: 1.1em; }
+        
+        /* 响应式表格优化 */
+        .table-responsive { 
+            overflow-x: auto; 
+            -webkit-overflow-scrolling: touch;
+        }
+        table { 
+            width: 100%; 
+            min-width: 800px; /* 保证所有列都有空间展示 */
+            border-collapse: collapse; 
+            margin-top: 10px; 
+            font-size: 0.9em; 
+        }
+        th, td { 
+            border: 1px solid #ddd; 
+            padding: 8px; 
+            text-align: left; 
+            vertical-align: top; 
+        }
         th { background-color: #f2f2f2; color: #333; font-weight: bold; }
-        .highlight-row { background-color: #e9f7ef; }
-        .note { background-color: #f0f8ff; border-left: 5px solid #007bff; padding: 15px; margin-top: 20px; border-radius: 5px; }
-        ul { padding-left: 20px; }
+        
+        ul { padding-left: 18px; margin-top: 5px; }
+        .note { color: #333; background-color: #e9f7ef; padding: 10px; border-radius: 4px; margin-top: 10px; }
     </style>
 </head>
 <body>
@@ -28,134 +59,102 @@
     <p><strong>租车：</strong> 11月27日 – 11月29日 (3天高效自驾)</p>
 
     <h2>📅 第一部分：每日行程概览</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>日期</th>
-                <th>星期</th>
-                <th>Tyler</th>
-                <th>Paul</th>
-                <th>Fable</th>
-                <th>核心活动主题</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td>11月23日</td><td>日</td><td>🛫 旅行日</td><td>🛫 旅行日</td><td>🛫 旅行日</td><td>**晚间飞往迪拜** (抵达日)</td></tr>
-            <tr><td>11月24日</td><td>一</td><td>**商务日 1**</td><td>自由活动</td><td>自由活动</td><td>🛬 **抵达休息** & 酒店周边休闲</td></tr>
-            <tr><td>11月25日</td><td>二</td><td>**商务日 2**</td><td>自由活动</td><td>自由活动</td><td>🕌 **老城文化高效探索**</td></tr>
-            <tr><td>11月26日</td><td>三</td><td>**商务日 3**</td><td>**商务日 1**</td><td>自由活动</td><td>**Fable 现代地标独探** (T/P 商务)</td></tr>
-            <tr class="highlight-row"><td>11月27日</td><td>四</td><td>自由活动</td><td>**商务日 2**</td><td>自由活动</td><td>**🌊 T & F 海滩/棕榈岛全日游**</td></tr>
-            <tr class="highlight-row"><td>11月28日</td><td>五</td><td>全天空闲</td><td>全天空闲</td><td>全天空闲</td><td>**🏙️ 哈利法塔 & 沙漠冲沙 (三人共同)**</td></tr>
-            <tr class="highlight-row"><td>11月29日</td><td>六</td><td>全天空闲</td><td>全天空闲</td><td>全天空闲</td><td>**🇦🇪 阿布扎比全日游 (高效自驾)**</td></tr>
-            <tr><td>11月30日</td><td>日</td><td>✈️ 离境</td><td>✈️ 离境</td><td>✈️ 离境</td><td>**赶往机场** (离境日 EK 304)</td></tr>
-        </tbody>
-    </table>
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>日期</th><th>星期</th><th>Tyler</th><th>Paul</th><th>Fable</th><th>核心活动主题</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>11月23日</td><td>日</td><td>🛫 旅行日</td><td>🛫 旅行日</td><td>🛫 旅行日</td><td>**晚间飞往迪拜** (抵达日)</td></tr>
+                <tr><td>11月24日</td><td>一</td><td>**商务日 1**</td><td>自由活动</td><td>自由活动</td><td>🛬 **抵达休息** & 酒店周边休闲</td></tr>
+                <tr><td>11月25日</td><td>二</td><td>**商务日 2**</td><td>自由活动</td><td>自由活动</td><td>🕌 **老城文化高效探索**</td></tr>
+                <tr><td>11月26日</td><td>三</td><td>**商务日 3**</td><td>**商务日 1**</td><td>自由活动</td><td>**Fable 现代地标独探** (T/P 商务)</td></tr>
+                <tr><td>11月27日</td><td>四</td><td>自由活动</td><td>**商务日 2**</td><td>自由活动</td><td>**🌊 T & F 海滩/棕榈岛全日游**</td></tr>
+                <tr><td>11月28日</td><td>五</td><td>全天空闲</td><td>全天空闲</td><td>全天空闲</td><td>**🏙️ 哈利法塔 & 沙漠冲沙 (三人共同)**</td></tr>
+                <tr><td>11月29日</td><td>六</td><td>全天空闲</td><td>全天空闲</td><td>全天空闲</td><td>**🇦🇪 阿布扎比全日游 (高效自驾)**</td></tr>
+                <tr><td>11月30日</td><td>日</td><td>✈️ 离境</td><td>✈️ 离境</td><td>✈️ 离境</td><td>**赶往机场** (离境日 EK 304)</td></tr>
+            </tbody>
+        </table>
+    </div>
 
     <h2>🗺️ 第二部分：核心活动、时间与景点特色</h2>
 
     <h3>📌 城市探索与商务交错日 (11/24 - 11/27)</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>日期</th>
-                <th>参与人员</th>
-                <th>时间</th>
-                <th>活动/景点名称</th>
-                <th>景点特色与体验</th>
-                <th>交通/预算 (人均)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td>11/24 (一)</td><td>P & F</td><td>14:00</td><td>**Ibn Battuta Mall 午餐**</td><td>酒店旁的主题购物中心休闲午餐。</td><td>步行 (¥150 午餐)</td></tr>
-            <tr><td>11/25 (二)</td><td>P & F</td><td>09:30</td><td>**巴斯塔基亚老城区**</td><td>探索传统阿拉伯风塔建筑和历史街巷。</td><td>**打车/Careem** (¥150 单程车费)</td></tr>
-            <tr><td>11/25 (二)</td><td>11:30</td><td>Abra 渡河 & 黄金市场</td><td>乘坐木船穿越迪拜湾，感受传统的贸易中心。</td><td>Abra/步行</td></tr>
-            <tr><td>11/26 (三)</td><td>Fable</td><td>10:00</td><td>**未来博物馆**</td><td>“世界上最美的建筑”，内部展示未来科技、太空旅行等。</td><td>Metro (¥120 门票)</td></tr>
-            <tr><td>11/26 (三)</td><td>13:00</td><td>**迪拜之框**</td><td>登上观景桥，一侧是新迪拜，一侧是老迪拜。</td><td>出租车/Uber (¥80 门票)</td></tr>
-            <tr><td>11/27 (四)</td><td>T & F</td><td>09:30</td><td>**朱美拉清真寺 / 古城午餐**</td><td>文化体验，随后在迪拜威尼斯古城享用午餐。</td><td>**自驾** (¥200 午餐)</td></tr>
-            <tr><td>11/27 (四)</td><td>14:00</td><td>**棕榈岛 The View 观景台**</td><td>360度俯瞰棕榈岛、亚特兰蒂斯酒店和迪拜全景。</td><td>**自驾** (¥130 门票)</td></tr>
-            <tr><td>11/27 (四)</td><td>18:30</td><td>**迪拜码头晚餐巡游**</td><td>商务日结束后，三人共同在船上享受浪漫晚餐和夜景。</td><td>**自驾/集合** (¥300 - 500 晚餐)</td></tr>
-        </tbody>
-    </table>
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>日期</th><th>参与人员</th><th>时间</th><th>活动/景点名称</th><th>景点特色与体验</th><th>游玩时长</th><th>交通/预算 (人均)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>11/24 (一)</td><td>P & F</td><td>14:00</td><td>**Ibn Battuta Mall 午餐**</td><td>酒店旁的主题购物中心休闲午餐。</td><td>2h</td><td>步行 (¥150 午餐)</td></tr>
+                <tr><td>11/25 (二)</td><td>P & F</td><td>09:30</td><td>**巴斯塔基亚老城区** & **黄金市场**</td><td>探索传统风塔建筑和历史街巷； Abra 渡河后逛黄金和香料市场。</td><td>2.5h</td><td>打车/Careem (¥150 单程车费)</td></tr>
+                <tr><td>11月26日</td><td>Fable</td><td>10:00</td><td>**未来博物馆**</td><td>“世界上最美的建筑”，内部展示未来科技、太空旅行等。</td><td>2h</td><td>Metro (¥120 门票，需预订)</td></tr>
+                <tr><td>11月26日</td><td>Fable</td><td>13:00</td><td>**迪拜之框**</td><td>登上观景桥，一侧是新迪拜（哈利法塔），一侧是老迪拜。</td><td>1.5h</td><td>出租车/Uber (¥80 门票)</td></tr>
+                <tr><td>11月27日</td><td>T & F</td><td>09:30</td><td>**朱美拉清真寺 / 古城午餐**</td><td>文化体验，随后在迪拜威尼斯古城享用午餐。</td><td>2.5h</td><td>**自驾** (¥200 午餐)</td></tr>
+                <tr><td>11月27日</td><td>T & F</td><td>14:00</td><td>**棕榈岛 The View 观景台**</td><td>360度俯瞰棕榈岛、亚特兰蒂斯酒店和迪拜全景。</td><td>1.5h</td><td>**自驾** (¥130 门票)</td></tr>
+                <tr><td>11月27日</td><td>T, P, F</td><td>18:30</td><td>**迪拜码头晚餐巡游**</td><td>商务日结束后，三人共同在船上享受浪漫晚餐和夜景。</td><td>2.5h</td><td>**自驾/集合** (¥300 - 500 晚餐)</td></tr>
+            </tbody>
+        </table>
+    </div>
 
     <h3>🚗 三人共同活动日 (11/28 - 11/29)</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>日期</th>
-                <th>参与人员</th>
-                <th>时间</th>
-                <th>活动/景点名称</th>
-                <th>景点特色与体验</th>
-                <th>交通/预算 (人均)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td>11/28 (五)</td><td>T, P, F</td><td>09:30</td><td>**【哈利法塔登顶】**</td><td>登上 124/125 观景台，俯瞰迪拜天际线，体验世界最快电梯。</td><td>**自驾** (¥200 门票，需预订)</td></tr>
-            <tr><td>11/28 (五)</td><td>15:30</td><td>**沙漠冲沙之旅**</td><td>体验 4x4 越野车冲沙、日落摄影，并在营地享用烧烤晚餐和表演。</td><td>**专车接送** (¥400-700)</td></tr>
-            <tr><td>11/29 (六)</td><td>T, P, F</td><td>09:30</td><td>**谢赫扎耶德大清真寺**</td><td>阿联酋的建筑奇迹，白色大理石，拥有全球最大地毯和水晶吊灯。</td><td>**自驾** (1h 15min) (¥0 免费)</td></tr>
-            <tr><td>11/29 (六)</td><td>T, P, F</td><td>14:00</td><td>**阿布扎比卢浮宫**</td><td>标志性的“光雨”穹顶，展示全球艺术和文化连接。</td><td>**自驾** (¥150 门票)</td></tr>
-            <tr><td>11/29 (六)</td><td>T, P, F</td><td>17:00</td><td>**出发返回迪拜**</td><td>避开 E11 晚高峰拥堵，确保舒适回程。</td><td>**自驾**</td></tr>
-        </tbody>
-    </table>
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>日期</th><th>参与人员</th><th>时间</th><th>活动/景点名称</th><th>景点特色与体验</th><th>游玩时长</th><th>交通/预算 (人均)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>11月28日</td><td>T, P, F</td><td>09:30</td><td>**【哈利法塔登顶】**</td><td>登上 124/125 观景台，俯瞰迪拜天际线，体验世界最快电梯。</td><td>2h</td><td>**自驾** (¥200 门票，需预订)</td></tr>
+                <tr><td>11月28日</td><td>T, P, F</td><td>15:30</td><td>**沙漠冲沙之旅**</td><td>体验 4x4 越野车冲沙、日落摄影，并在营地享用烧烤晚餐和表演。</td><td>6h</td><td>**专车接送** (¥400-700)</td></tr>
+                <tr><td>11月29日</td><td>T, P, F</td><td>09:30</td><td>**谢赫扎耶德大清真寺**</td><td>阿联酋的建筑奇迹，白色大理石，拥有全球最大地毯和水晶吊灯。</td><td>1.5h</td><td>**自驾** (1h 15min) (¥0 免费)</td></tr>
+                <tr><td>11月29日</td><td>T, P, F</td><td>14:00</td><td>**阿布扎比卢浮宫**</td><td>标志性的“光雨”穹顶，展示全球艺术和文化连接。</td><td>2.5h</td><td>**自驾** (¥150 门票)</td></tr>
+                <tr><td>11月29日</td><td>T, P, F</td><td>**17:00**</td><td>**出发返回迪拜**</td><td>避开 E11 晚高峰拥堵，确保舒适回程。</td><td>-</td><td>**自驾**</td></tr>
+            </tbody>
+        </table>
+    </div>
 
     <h2>🧭 第三部分：景点覆盖情况与物流细则</h2>
-    
+
     <h3>1. 个人景点覆盖情况分析</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>成员</th>
-                <th>已覆盖的共同项目</th>
-                <th>**因商务活动而未覆盖的个人景点**</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Fable</td>
-                <td>所有共同项目。</td>
-                <td>**无遗漏**</td>
-            </tr>
-            <tr>
-                <td>Tyler</td>
-                <td>哈利法塔、阿布扎比、沙漠冲沙。</td>
-                <td>🔸 **未来博物馆** 🔸 **老迪拜老城区/市场**</td>
-            </tr>
-            <tr>
-                <td>Paul</td>
-                <td>哈利法塔、阿布扎比、沙漠冲沙。</td>
-                <td>🔹 **朱美拉清真寺/古城** 🔹 **棕榈岛 The View 观景台**</td>
-            </tr>
-        </tbody>
-    </table>
+    <ul>
+        <li>**Fable：** 无遗漏。</li>
+        <li>**Tyler 需补：** 🔸 未来博物馆 🔸 老迪拜老城区/市场 (因商务错过)</li>
+        <li>**Paul 需补：** 🔹 朱美拉清真寺/古城 🔹 棕榈岛 The View 观景台 (因商务错过)</li>
+    </ul>
 
     <h3>2. 团队共同未覆盖的重要景点</h3>
-    <p>此表格列出了 **Tyler、Paul 和 Fable 三人都没有机会前往** 的重要景点，可供团队讨论是否调整。</p>
+    <p>此表格列出了 **Tyler、Paul 和 Fable 三人都没有机会前往** 的重要景点：</p>
     <ul>
-        <li>**迪拜野生动物园:** (中等价值) 替代方案：沙漠冲沙。</li>
-        <li>**亚特兰蒂斯水世界:** (中/高价值) 替代方案：JBR 海滩休闲。</li>
-        <li>**奇迹花园:** (季节性) 替代方案：朱美拉古城。</li>
+        <li>**迪拜野生动物园:** 替代方案：沙漠冲沙。</li>
+        <li>**亚特兰蒂斯水世界:** 替代方案：JBR 海滩休闲.</li>
+        <li>**奇迹花园:** 替代方案：朱美拉古城 (需确认 11 月是否开放)。</li>
     </ul>
 
     <h3>3. 物流与交通提示</h3>
-    <ul>
-        <li>**酒店优势：** Oaks Ibn Battuta Gate Hotel 靠近出城高速，**前往阿布扎比最快**。</li>
-        <li>**老城交通：** 11/25日强烈推荐使用 **打车/Careem** 代替耗时的地铁。</li>
-        <li>**预订提示：** 哈利法塔、未来博物馆、卢浮宫 **必须提前在线预订**。</li>
-    </ul>
+    <p class="note">
+        <strong>酒店优势：</strong> Oaks Ibn Battuta Gate Hotel 靠近出城高速，**前往阿布扎比最快**。<br>
+        <strong>交通优化：</strong> 11/25日老城探索，强烈推荐使用 **打车/Careem** 代替耗时的地铁。<br>
+        <strong>预订：</strong> 哈利法塔、未来博物馆、卢浮宫 **必须提前在线预订**。
+    </p>
 
     <h2>☀️ 第四部分：气候、穿衣与餐饮指南</h2>
-    
+
     <h3>1. 穿衣建议（11月下旬）</h3>
     <ul>
         <li>**外部气候：** 白天温暖（20°C - 30°C），夜晚凉爽。</li>
-        <li>**文化/商务：** 清真寺必须遮盖膝盖、肩膀和上臂。室内空调强劲，需备薄外套。</li>
+        <li>**文化/商务：** 清真寺必须遮盖膝盖、肩膀和上臂。女士需携带头巾。</li>
     </ul>
 
     <h3>2. 餐饮选择与建议</h3>
     <ul>
         <li>**当地美食：** 11/25日老城区推荐尝试 **Al Ustad Special Kabab**。</li>
         <li>**特殊体验：** 11/27日可享受迪拜码头**单桅帆船巡游晚餐**。</li>
-        <li>**阿布扎比：** 可在阿布扎比卢浮宫内或亚斯岛用餐。</li>
     </ul>
 </div>
 
